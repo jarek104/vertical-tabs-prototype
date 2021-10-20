@@ -1,0 +1,22 @@
+<mat-divider></mat-divider>
+
+<div (mousemove)="handleMouseMove($event)" class="box">
+  <ng-container *ngTemplateOutlet="temp; context: state" ></ng-container>
+</div>
+
+
+<ng-template #temp let-x="x" let-y="y">
+  <div>This template lives in the same component</div>
+  <div>The mouse position is ({{x}}, {{y}})</div>
+</ng-template>
+
+<br>
+
+<app-mouse>
+  <ng-template let-xTest="xFromComponent" let-yLocal="yFromComponent">
+    <div>Host uses "app-mouse" component tag and puts "ng-template" inside.</div>
+    <div>"app-mouse" picks up the reference to the template and uses "ngTemplateOutlet" to display it</div>
+    <div>The mouse position is ({{ xTest }}, {{ yLocal }})</div>
+  </ng-template>
+</app-mouse>
+

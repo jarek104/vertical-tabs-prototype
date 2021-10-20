@@ -1,0 +1,33 @@
+.container {
+  height: 100%;
+  background: white;
+  overflow-x: hidden;
+}
+
+.list {
+  position: relative;
+  background: white;
+  color: #666666;
+  padding-bottom: 8px;
+}
+
+.item {
+  height: 60px;
+  width: 65px;
+  cursor: pointer;
+}
+
+.selected {
+  background: #92E1F4;
+  color: #00586E;
+  transition: all .1s ease-in-out;
+}
+
+.rotate-chevron {
+  transform: rotate(180deg);
+  transition: all 0.2s;
+}
+
+.chevron {
+  transition: all 0.2s;
+}

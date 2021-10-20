@@ -1,0 +1,19 @@
+.app-wrapper {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.right-side-drawer {
+  width: 200px;
+}
+
+.mat-drawer-inner-container {
+  min-height: 100%
+}
+
+.no-border {
+  border: none;
+}
